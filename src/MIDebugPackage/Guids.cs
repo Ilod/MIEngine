@@ -9,8 +9,8 @@ namespace Microsoft.MIDebugPackage
 {
     internal static class GuidList
     {
-        public const string guidMIDebugPackagePkgString = "7a28ceda-da3e-4172-b19a-bb9c810046a6";
-        public const string guidMIDebugPackageCmdSetString = "eb4e4965-e07f-46d0-afcc-aa4dd43a5336";
+        public const string guidMIDebugPackagePkgString = "6f32ce3b-080d-4165-a2c7-93bf58fccc6c";
+        public const string guidMIDebugPackageCmdSetString = "cc8243ff-d5d9-47db-9e96-3fd6b94075da";
 
         public static readonly Guid guidMIDebugPackageCmdSet = new Guid(guidMIDebugPackageCmdSetString);
     };

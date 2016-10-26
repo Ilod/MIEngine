@@ -22,7 +22,7 @@ namespace Microsoft.SSHDebugPS
     /// using the default port supplier as far as AD7 is concerned, and the SSH port supplier is just acting as a transport.
     /// </summary>
     [ComVisible(true)]
-    [Guid("7E3052B2-FB42-4E38-B22C-1FD281BD4413")]
+    [Guid("82067655-6ba7-4665-8351-e32877374fdd")]
     sealed public class MIEngineLauncher : IPlatformAppLauncher
     {
         private SSHLaunchOptions _launchOptions;

@@ -15,7 +15,7 @@ namespace Microsoft.VisualStudio.Debugger.Interop.UnixPortSupplier
     [ComImport()]
     [ComVisible(true)]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-    [Guid("808CC6CA-45B1-47D5-9779-62BAA597BA50")]
+    [Guid("f2a51d7c-9fad-433b-928d-6cdcdfed9e47")]
     public interface IDebugUnixShellPort
     {
         /// <summary>
@@ -75,7 +75,7 @@ namespace Microsoft.VisualStudio.Debugger.Interop.UnixPortSupplier
     [ComImport()]
     [ComVisible(true)]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-    [Guid("0BB77830-931D-4B54-822E-7BB56FA10049")]
+    [Guid("107e264a-7fdf-453d-bb98-bd12319df2e4")]
     public interface IDebugUnixShellAsyncCommand
     {
         /// <summary>
@@ -97,7 +97,7 @@ namespace Microsoft.VisualStudio.Debugger.Interop.UnixPortSupplier
     [ComImport()]
     [ComVisible(true)]
     [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-    [Guid("0CE7C176-1AF3-4DBD-BA4E-1BBDB242B190")]
+    [Guid("d69c5b8b-db75-4db9-9d0c-7c9aeee75a5e")]
     public interface IDebugUnixShellCommandCallback
     {
         /// <summary>

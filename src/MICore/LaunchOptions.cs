@@ -977,7 +977,7 @@ namespace MICore
                             {
                                 serializer = GetXmlSerializer(typeof(IOSLaunchOptions));
                                 launcherXmlOptions = Deserialize(serializer, reader);
-                                clsidLauncher = new Guid("316783D1-1824-4847-B3D3-FB048960EDCF");
+                                clsidLauncher = new Guid("6bca1fdf-8715-4cd2-a40f-08d2a3143a6b");
                             }
                             break;
 
@@ -985,7 +985,7 @@ namespace MICore
                             {
                                 serializer = GetXmlSerializer(typeof(AndroidLaunchOptions));
                                 launcherXmlOptions = Deserialize(serializer, reader);
-                                clsidLauncher = new Guid("C9A403DA-D3AA-4632-A572-E81FF6301E9B");
+                                clsidLauncher = new Guid("ee414457-b0d5-4c30-948f-3e34e13aec1c");
                             }
                             break;
 
@@ -993,7 +993,7 @@ namespace MICore
                             {
                                 serializer = GetXmlSerializer(typeof(SSHLaunchOptions));
                                 launcherXmlOptions = Deserialize(serializer, reader);
-                                clsidLauncher = new Guid("7E3052B2-FB42-4E38-B22C-1FD281BD4413");
+                                clsidLauncher = new Guid("82067655-6ba7-4665-8351-e32877374fdd");
                             }
                             break;
 

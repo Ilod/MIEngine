@@ -1,5 +1,5 @@
-﻿[$RootKey$\AD7Metrics\Engine\{EA6637C6-17DF-45B5-A183-0951C54243BC}]
-@="MI Debug Engine"
+﻿[$RootKey$\AD7Metrics\Engine\{D8C0E0A5-20B9-46FD-A041-14853ECAADBA}]
+@="Moche MI Debug Engine"
 ; "AddressBP"=dword:00000001
 "AlwaysLoadLocal"=dword:00000001
 "AlwaysLoadProgramProviderLocal"=dword:00000001
@@ -12,13 +12,13 @@
 ; "FunctionBP"=dword:00000001
 ; "HitCountBP"=dword:00000001
 ; "JustMyCodeStepping"=dword:00000001
-"Name"="Native (MI-based)"
+"Name"="Native (Moche MI-based)"
 "SetNextStatement"=dword:00000001
 ; "SuspendThread"=dword:00000001
-"CLSID"="{0fc2f352-2fc1-4f80-8736-51cd1ab28f16}"
+"CLSID"="{ab06f0a6-5692-4cd0-af69-afa321def99f}"
 "GlobalVisualizersDirectory"="$PackageFolder$"
 
-[$RootKey$\CLSID\{0fc2f352-2fc1-4f80-8736-51cd1ab28f16}]
+[$RootKey$\CLSID\{ab06f0a6-5692-4cd0-af69-afa321def99f}]
 "Assembly"="Microsoft.MIDebugEngine"
 "Class"="Microsoft.MIDebugEngine.AD7Engine"
 "InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
@@ -28,9 +28,9 @@
 ; SSH registration
 
 ; Registration to use clrdbg with the SSH port supplier
-[$RootKey$\AD7Metrics\Engine\{6B320935-1391-433A-A8B6-898D0F03164A}]
-@="MI Debug Engine - clrdbg+SSH"
-"PortSupplier"="{3FDDF14E-E758-4695-BE0C-7509920432C9}"
+[$RootKey$\AD7Metrics\Engine\{8af0c4d0-55a6-4b51-87cb-d7a533035913}]
+@="Moche MI Debug Engine - clrdbg+SSH"
+"PortSupplier"="{7b4360a6-9287-4ebe-b309-3e1b1433e47c}"
 "Attach"=dword:00000001
 ; "AddressBP"=dword:00000001
 "AlwaysLoadLocal"=dword:00000001
@@ -42,23 +42,23 @@
 ; "FunctionBP"=dword:00000001
 ; "HitCountBP"=dword:00000001
 ; "JustMyCodeStepping"=dword:00000001
-"Name"="Managed (.NET Core for Unix)"
+"Name"="Managed (Moche .NET Core for Unix)"
 ; "SetNextStatement"=dword:00000001
 ; "SuspendThread"=dword:00000001
-"CLSID"="{0fc2f352-2fc1-4f80-8736-51cd1ab28f16}"
+"CLSID"="{ab06f0a6-5692-4cd0-af69-afa321def99f}"
 "RemoteInstallationDirectory"=".vs-debugger"
 "RemoteInstallationSubDirectory"="vs2015u2"
 "ClrDbgVersion"="vs2015u2"
 ; Following is a placeholder, needs to be fixed.
 "GetClrDbgUrl"="https://aka.ms/getclrdbgsh"
 
-[$RootKey$\AD7Metrics\Engine\{6B320935-1391-433A-A8B6-898D0F03164A}\IncompatibleList]
-"gdb"="{91744D97-430F-42C1-9779-A5813EBD6AB2}"
+[$RootKey$\AD7Metrics\Engine\{8af0c4d0-55a6-4b51-87cb-d7a533035913}\IncompatibleList]
+"gdb"="{7767d3e7-873a-4ba9-86f7-527a2776c453}"
 
 ; Registration to use gdb with the SSH port supplier
-[$RootKey$\AD7Metrics\Engine\{91744D97-430F-42C1-9779-A5813EBD6AB2}]
-@="MI Debug Engine - gdb+SSH"
-"PortSupplier"="{3FDDF14E-E758-4695-BE0C-7509920432C9}"
+[$RootKey$\AD7Metrics\Engine\{7767d3e7-873a-4ba9-86f7-527a2776c453}]
+@="Moche MI Debug Engine - gdb+SSH"
+"PortSupplier"="{7b4360a6-9287-4ebe-b309-3e1b1433e47c}"
 "Attach"=dword:00000001
 ; "AddressBP"=dword:00000001
 "AlwaysLoadLocal"=dword:00000001
@@ -71,11 +71,11 @@
 ; "FunctionBP"=dword:00000001
 ; "HitCountBP"=dword:00000001
 ; "JustMyCodeStepping"=dword:00000001
-"Name"="Native (GDB)"
+"Name"="Native (Moche GDB)"
 "SetNextStatement"=dword:00000001
 ; "SuspendThread"=dword:00000001
-"CLSID"="{0fc2f352-2fc1-4f80-8736-51cd1ab28f16}"
+"CLSID"="{ab06f0a6-5692-4cd0-af69-afa321def99f}"
 "GlobalVisualizersDirectory"="$PackageFolder$"
 
-[$RootKey$\AD7Metrics\Engine\{91744D97-430F-42C1-9779-A5813EBD6AB2}\IncompatibleList]
-"clrdbg"="{6B320935-1391-433A-A8B6-898D0F03164A}"
+[$RootKey$\AD7Metrics\Engine\{7767d3e7-873a-4ba9-86f7-527a2776c453}\IncompatibleList]
+"clrdbg"="{8af0c4d0-55a6-4b51-87cb-d7a533035913}"

@@ -1,14 +1,14 @@
-﻿[$RootKey$\AD7Metrics\PortSupplier\{3FDDF14E-E758-4695-BE0C-7509920432C9}]
-"CLSID"="{1326FB0D-EA51-4F90-BEDF-5948588B0FE1}"
+﻿[$RootKey$\AD7Metrics\PortSupplier\{7b4360a6-9287-4ebe-b309-3e1b1433e47c}]
+"CLSID"="{6312d749-f659-4583-9500-ca1ffad30e9a}"
 "Name"="SSH"
 
-[$RootKey$\CLSID\{1326FB0D-EA51-4F90-BEDF-5948588B0FE1}]
+[$RootKey$\CLSID\{6312d749-f659-4583-9500-ca1ffad30e9a}]
 "Assembly"="Microsoft.SSHDebugPS"
 "Class"="Microsoft.SSHDebugPS.AD7PortSupplier"
 "InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"
 "CodeBase"="$PackageFolder$\Microsoft.SSHDebugPS.dll"
 
-[$RootKey$\CLSID\{7E3052B2-FB42-4E38-B22C-1FD281BD4413}]
+[$RootKey$\CLSID\{82067655-6ba7-4665-8351-e32877374fdd}]
 "Assembly"="Microsoft.SSHDebugPS"
 "Class"="Microsoft.SSHDebugPS.MIEngineLauncher"
 "InprocServer32"="$WinDir$\SYSTEM32\MSCOREE.DLL"

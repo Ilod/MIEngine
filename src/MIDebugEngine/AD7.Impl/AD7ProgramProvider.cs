@@ -15,7 +15,7 @@
 //namespace Microsoft.MIDebugEngine
 //{
 //    [ComVisible(true)]
-//    [Guid("af721e28-535b-47e4-be3b-6ffc4621aa96")]
+//    [Guid("681857ba-b484-45d5-bdf6-9c0ce46638d9")]
 //    public class AD7ProgramProvider : IDebugProgramProvider2
 //    {
 //        public AD7ProgramProvider()

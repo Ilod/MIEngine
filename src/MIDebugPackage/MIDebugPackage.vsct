@@ -43,21 +43,21 @@
       <Button guid="guidMIDebugPackageCmdSet" id="cmdidLaunchMIDebug" priority="0x0100" type="Button">
         <CommandFlag>AllowParams</CommandFlag>
         <Strings>
-          <ButtonText>MIDebug Launch</ButtonText>
+          <ButtonText>Moche MIDebug Launch</ButtonText>
           <!--NOTE: 'Debug.' (or some other prefix) is required - the command window doesn't like commands which aren't prefixed.
             If we wind up keeping this code, we might want to switch to things like 'MIDebug.launch <foo>'-->
-          <CanonicalName>Debug.MIDebugLaunch</CanonicalName>
-          <LocCanonicalName>Debug.MIDebugLaunch</LocCanonicalName>
+          <CanonicalName>Debug.MocheMIDebugLaunch</CanonicalName>
+          <LocCanonicalName>Debug.MocheMIDebugLaunch</LocCanonicalName>
         </Strings>
       </Button>
       <Button guid="guidMIDebugPackageCmdSet" id="cmdidMIDebugExec" priority="0x0100" type="Button">
         <CommandFlag>AllowParams</CommandFlag>
         <Strings>
-          <ButtonText>MIDebug Execute Command</ButtonText>
+          <ButtonText>Moche MIDebug Execute Command</ButtonText>
           <!--NOTE: 'Debug.' (or some other prefix) is required - the command window doesn't like commands which aren't prefixed.
             If we wind up keeping this code, we might want to switch to things like 'MIDebug.launch <foo>'-->
-          <CanonicalName>Debug.MIDebugExec</CanonicalName>
-          <LocCanonicalName>Debug.MIDebugExec</LocCanonicalName>
+          <CanonicalName>Debug.MocheMIDebugExec</CanonicalName>
+          <LocCanonicalName>Debug.MocheMIDebugExec</LocCanonicalName>
         </Strings>
       </Button>
     </Buttons>
@@ -65,10 +65,10 @@
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidMIDebugPackagePkg" value="{7a28ceda-da3e-4172-b19a-bb9c810046a6}" />
+    <GuidSymbol name="guidMIDebugPackagePkg" value="{6f32ce3b-080d-4165-a2c7-93bf58fccc6c}" />
     
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidMIDebugPackageCmdSet" value="{eb4e4965-e07f-46d0-afcc-aa4dd43a5336}">
+    <GuidSymbol name="guidMIDebugPackageCmdSet" value="{cc8243ff-d5d9-47db-9e96-3fd6b94075da}">
 
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="cmdidLaunchMIDebug" value="0x0100" />

@@ -15,11 +15,11 @@ using System.IO;
 namespace Microsoft.SSHDebugPS
 {
     [ComVisible(true)]
-    [Guid("1326FB0D-EA51-4F90-BEDF-5948588B0FE1")]
+    [Guid("6312d749-f659-4583-9500-ca1ffad30e9a")]
     internal class AD7PortSupplier : IDebugPortSupplier2, IDebugPortSupplier3, IDebugPortSupplierDescription2
     {
         private const string Name = "SSH";
-        private readonly Guid _Id = new Guid("3FDDF14E-E758-4695-BE0C-7509920432C9");
+        private readonly Guid _Id = new Guid("7b4360a6-9287-4ebe-b309-3e1b1433e47c");
         public AD7PortSupplier()
         {
         }

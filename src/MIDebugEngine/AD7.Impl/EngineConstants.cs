@@ -13,9 +13,9 @@ namespace Microsoft.MIDebugEngine
         /// This is the engine GUID of the engine. It needs to be changed here and in the registration
         /// when creating a new engine.
         /// </summary>
-        public static readonly Guid EngineId = new Guid("{ea6637c6-17df-45b5-a183-0951c54243bc}");
+        public static readonly Guid EngineId = new Guid("{d8c0e0a5-20b9-46fd-a041-14853ecaadba}");
 
-        public static readonly Guid GdbEngine = new Guid("{91744D97-430F-42C1-9779-A5813EBD6AB2}");
-        public static readonly Guid ClrdbgEngine = new Guid("{6B320935-1391-433A-A8B6-898D0F03164A}");
+        public static readonly Guid GdbEngine = new Guid("{7767d3e7-873a-4ba9-86f7-527a2776c453}");
+        public static readonly Guid ClrdbgEngine = new Guid("{8af0c4d0-55a6-4b51-87cb-d7a533035913}");
     }
 }
