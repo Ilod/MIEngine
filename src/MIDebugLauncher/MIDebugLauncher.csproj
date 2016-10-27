@@ -90,6 +90,10 @@
     <None Include="CommonProjectSystemExtension.targets" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MICore\MICore.csproj">
+      <Project>{54C33AFA-438D-4932-A2F0-D0F2BB2FADC9}</Project>
+      <Name>MICore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MIDebugEngine\MIDebugEngine.csproj">
       <Project>{a8b0230c-7806-407c-af18-54b2ce21275e}</Project>
       <Name>MIDebugEngine</Name>

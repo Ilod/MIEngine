@@ -34,8 +34,7 @@
 
 
   <StringProperty Name="LocalDebuggerPath" DisplayName="Debugger"
-                  Description="The debugger executable path."
-                  F1Keyword="VC.Project.IVCLocalDebugPageObject.Debugger">
+                  Description="The debugger executable path.">
     <StringProperty.ValueEditors>
       <ValueEditor EditorType="DefaultFindFullPathPropertyEditor" DisplayName="&lt;regsvr32.exe&gt;">
         <ValueEditor.Metadata>
@@ -46,4 +45,14 @@
       <ValueEditor EditorType="DefaultFilePropertyEditor" DisplayName="&lt;Browse...&gt;"/>
     </StringProperty.ValueEditors>
   </StringProperty>
+  <EnumProperty Name="LocalDebuggerType" DisplayName="Debugger Type"
+                Description="The king of debugger">
+    <EnumValue Name="gdb" DisplayName="GDB"
+               Description="The GNU GDB debugger" />
+    <EnumValue Name="lldb" DisplayName="LLDB"
+               Description="LLDB-MI debugger (use lldb-mi.exe, not lldb.exe)" />
+    <EnumValue Name="clrdbg" DisplayName="CLRDBG"
+               Description="The Microsoft C++/CLR Debugger" />
+  </EnumProperty>
+                
 </Rule>

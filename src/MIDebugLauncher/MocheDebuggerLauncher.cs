@@ -15,6 +15,7 @@ namespace MIDebugLauncher
   using Microsoft.VisualStudio.ProjectSystem.Utilities.DebuggerProviders;
   using Microsoft.VisualStudio.ProjectSystem.VS.Debuggers;
   using Microsoft.VisualStudio.Shell.Interop;
+  using MICore.Xml.LaunchOptions;
 
   /// <summary>
   /// A Visual C++ extension that launches a custom debugger.
@@ -43,18 +44,6 @@ namespace MIDebugLauncher
       return !string.IsNullOrEmpty(commandValue) && !string.IsNullOrEmpty(debuggerPath);
     }
 
-    public class LocalLaunchOptions
-    {
-      [System.Xml.Serialization.XmlAttributeAttribute()]
-      public string MIDebuggerPath;
-      [System.Xml.Serialization.XmlAttributeAttribute()]
-      public string ExePath;
-      [System.Xml.Serialization.XmlAttributeAttribute()]
-      public string ExeArguments;
-      [System.Xml.Serialization.XmlAttributeAttribute()]
-      public string WorkingDirectory;
-    }
-
     public override async Task LaunchAsync(DebugLaunchOptions launchOptions)
     {
       // The properties that are available via DebuggerProperties are determined by the property XAML files in your project.
@@ -64,6 +53,12 @@ namespace MIDebugLauncher
       llo.ExeArguments = await debuggerProperties.LocalDebuggerCommandArguments.GetEvaluatedValueAtEndAsync();
       llo.WorkingDirectory = await debuggerProperties.LocalDebuggerWorkingDirectory.GetEvaluatedValueAtEndAsync();
       llo.MIDebuggerPath = await debuggerProperties.LocalDebuggerPath.GetEvaluatedValueAtEndAsync();
+      MIMode miMode;
+      if (Enum.TryParse(await debuggerProperties.LocalDebuggerType.GetEvaluatedValueAtEndAsync(), out miMode))
+      {
+        llo.MIMode = miMode;
+        llo.MIModeSpecified = true;
+      }
       if (llo.ExePath == null)
       {
         var generalProperties = await this.DebuggerProperties.GetConfigurationGeneralPropertiesAsync();
