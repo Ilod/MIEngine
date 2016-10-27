@@ -200,6 +200,8 @@
     <DropUnsignedFile Include="$(OutDir)\Microsoft.MIDebugPackage.pkgdef" />
     <DropSignedFile Include="$(OutDir)\Microsoft.DebugEngineHost.dll" />
     <DropUnsignedFile Include="$(OutDir)\Microsoft.DebugEngineHost.pdb" />
+    <DropSignedFile Include="$(OutDir)\Moche.MIDebugLauncher.dll" />
+    <DropUnsignedFile Include="$(OutDir)\Moche.MIDebugLauncher.pdb" />
     <DropUnsignedFile Include="$(OutDir)\osxlaunchhelper.scpt" />
     <DropUnsignedFile Include="@(RequiredNetFX46FacadeAssemblies)" />
   </ItemGroup>
@@ -227,6 +229,10 @@
       <Project>{a8b0230c-7806-407c-af18-54b2ce21275e}</Project>
       <Name>MIDebugEngine</Name>
       <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup;BuiltProjectOutputGroupDependencies;GetCopyToOutputDirectoryItems;SatelliteDllsProjectOutputGroup;</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\MIDebugLauncher\MIDebugLauncher.csproj">
+      <Project>{86abb846-9951-4067-8bb8-42505d4a12c7}</Project>
+      <Name>MIDebugLauncher</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition="'$(IsCoreCLR)' == 'true'">

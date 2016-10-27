@@ -8,6 +8,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIDebugPackage", "MIDebugPackage\MIDebugPackage.csproj", "{4F38F986-5C93-44CB-A387-AEF3737E6D22}"
 	ProjectSection(ProjectDependencies) = postProject
 		{95C0421F-D4C1-46E8-9177-6DAA4D71D0F2} = {95C0421F-D4C1-46E8-9177-6DAA4D71D0F2}
+		{86ABB846-9951-4067-8BB8-42505D4A12C7} = {86ABB846-9951-4067-8BB8-42505D4A12C7}
 		{15BCBEF4-1C2B-412B-925B-34A049097E62} = {15BCBEF4-1C2B-412B-925B-34A049097E62}
 	EndProjectSection
 EndProject
@@ -39,6 +40,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSHDebugPS", "SSHDebugPS\SSHDebugPS.csproj", "{15BCBEF4-1C2B-412B-925B-34A049097E62}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSHDebugUnitTests", "SSHDebugTests\SSHDebugUnitTests.csproj", "{54A2C83D-E889-46E7-B974-0D8D8A51397F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIDebugLauncher", "MIDebugLauncher\MIDebugLauncher.csproj", "{86ABB846-9951-4067-8BB8-42505D4A12C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -148,8 +151,8 @@ Global
 		{95C0421F-D4C1-46E8-9177-6DAA4D71D0F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Debug-PortablePDB|Any CPU.ActiveCfg = Debug-PortablePDB|Any CPU
-		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Debug-PortablePDB|Any CPU.Build.0 = Debug-PortablePDB|Any CPU
+		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Debug-PortablePDB|Any CPU.ActiveCfg = Debug|Any CPU
+		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Debug-PortablePDB|Any CPU.Build.0 = Debug|Any CPU
 		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Desktop.Debug|Any CPU.ActiveCfg = Desktop.Debug|Any CPU
 		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Desktop.Debug|Any CPU.Build.0 = Desktop.Debug|Any CPU
 		{7654CFBB-30DB-4C20-BDE3-A960CBA2036C}.Desktop.Release|Any CPU.ActiveCfg = Desktop.Release|Any CPU
@@ -182,8 +185,25 @@ Global
 		{54A2C83D-E889-46E7-B974-0D8D8A51397F}.Lab.Release|Any CPU.Build.0 = Lab.Release|Any CPU
 		{54A2C83D-E889-46E7-B974-0D8D8A51397F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54A2C83D-E889-46E7-B974-0D8D8A51397F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Debug-PortablePDB|Any CPU.ActiveCfg = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Debug-PortablePDB|Any CPU.Build.0 = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Desktop.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Desktop.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Desktop.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Desktop.Release|Any CPU.Build.0 = Release|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Lab.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Lab.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Lab.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Lab.Release|Any CPU.Build.0 = Release|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86ABB846-9951-4067-8BB8-42505D4A12C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86ABB846-9951-4067-8BB8-42505D4A12C7} = {B864C337-1AA8-42B3-BF01-90901F55DE70}
 	EndGlobalSection
 EndGlobal
